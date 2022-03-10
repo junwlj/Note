@@ -49,7 +49,7 @@ newgrp docker #更新docker用户组
 
 ```shell
 jundocker@jun-smi:~$ sudo groupadd docker
-[sudo] password for jundocker: 
+[sudo] password for jundocker:
 groupadd: group 'docker' already exists
 jundocker@jun-smi:~$ sudo gpasswd -a $jundocker docker
 gpasswd: user 'docker' does not exist
@@ -93,4 +93,3 @@ Server: Docker Engine - Community
   Version:          0.19.0
   GitCommit:        de40ad0
 ```
-
