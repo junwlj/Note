@@ -26,6 +26,7 @@ ssh-keygen -t rsa -C "你自己的github对应的邮箱地址"
 运行过程中会提示输入文件名，可直接按回车或者输入`id_rsa`,并提示你输入两次密码（该密码是你push文件的时候要输入的密码，而不是github管理者的密码），或者直接按回车，不输入密码。那么push的时候就不需要输入密码，直接提交到github上了。
 
 运行过程如下：
+
 ![git_ssh2](../images/git/git_ssh2.png)
 
 - 备份并移除已经存在的ssh keys(如果已存在ssh keys)
@@ -38,9 +39,9 @@ rm id_rsa*
 ```
 
 
-- 将刚刚创建的ssh keys添加到github中
-  - 利用gedit/cat命令，查看id_rsa.pub的内容
-..
+- **将刚刚创建的ssh keys添加到github中**
+  - 在GitHub中新建SSH keys，并将创建的`.ssh/id_rsa.pub`的内容添加到GitHub中的`SSH keys`中
+
 - 检查SSH连接情况：
 ```bash
 ssh -T git@github.com
